@@ -58,7 +58,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       render: function render() {
         return (0,vue__WEBPACK_IMPORTED_MODULE_1__.h)(App, props);
       }
-    }).use(plugin).mount(el);
+    }).use(plugin).component("Link", _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_2__.Link).component("Head", _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_2__.Head).mount(el);
+  },
+  title: function title(_title) {
+    return "My App - ".concat(_title);
   }
 });
 _inertiajs_progress__WEBPACK_IMPORTED_MODULE_3__.InertiaProgress.init();

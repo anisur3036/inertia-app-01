@@ -1,4 +1,8 @@
 <template>
+    <Head>
+        <title>About</title>
+        <meta type="description" content="This is about page" head="description">
+    </Head>
     <Nav />
     <div>About</div>
 </template>

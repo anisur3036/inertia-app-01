@@ -1,4 +1,8 @@
 <template>
+    <Head>
+        <title>Home</title>
+        <meta type="description" content="Home Description" head-key="description">
+    </Head>
     <Nav />
     <div>Hello, {{ name }}</div>
 </template>
