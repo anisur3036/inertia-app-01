@@ -117,6 +117,16 @@ var map = {
 		"./resources/js/Pages/Home.vue",
 		"/js/vendor",
 		"resources_js_Pages_Home_vue"
+	],
+	"./Users": [
+		"./resources/js/Pages/Users.vue",
+		"/js/vendor",
+		"resources_js_Pages_Users_vue"
+	],
+	"./Users.vue": [
+		"./resources/js/Pages/Users.vue",
+		"/js/vendor",
+		"resources_js_Pages_Users_vue"
 	]
 };
 function webpackAsyncContext(req) {

@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 
@@ -26,4 +27,14 @@ Route::get('/about', function () {
 
 Route::get('/faq', function () {
     return Inertia::render('Faq');
+});
+
+Route::get('/users', function () {
+    return Inertia::render('Users', [
+        'users' => User::paginate(20)->map(fn($user) => [
+            'id' => $user->id,
+            'name' => $user->name,
+            'email' => $user->email
+        ])
+    ]);
 });
